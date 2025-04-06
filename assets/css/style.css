@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=MedievalSharp&display=swap');
+
+:root {
+    --color-blanco: rgb(255, 255, 255);
+    --color-dorado: #CCAF3B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--color-dorado);
+    transition: .3s ease-in-out color;
+}
+
+header {
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    border: 1.5px solid var(--color-blanco);
+    padding: 1rem 1.2rem;
+    border-radius: 7px;
+}
+
+main {
+    width: 100%;
+}
+
+.icono__bandera{
+    border-radius: 4px;
+}
+
+/* Sección Bienvenida */
+.seccion__bienvenida {
+    color: var(--color-blanco);
+    width: 100%;
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.516)),
+        url('../img/image1.jpg');
+    background-size: cover;
+
+}
+
+.informacion {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border: 1px solid yellow;
+    text-align: center;
+}
+
+.seccion__informacion {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion__informacion h3 {
+    color: #E5D557;
+    font-size: 4rem;
+    text-decoration: underline;
+    font-family: "MedievalSharp", cursive;
+}
+
+.seccion__informacion .links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.seccion__informacion .links a {
+    display: inline-block;
+    padding: 1rem 1.4rem;
+    text-align: center;
+    color: var(--color-blanco);
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: var(--color-dorado);
+    text-shadow: 0 0 6px #00000098;
+}
+
+.contacto {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    color: var(--color-blanco);
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 2px solid var(--color-blanco);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.723);
+}
