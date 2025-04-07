@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academia Virtual BACH.EZ</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="./assets/img/iconoAcademia.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/iconoAcademia.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Academia Virtual BACH.EZ</h1>
-        <nav>
-            <a>Inicio</a>
-            <a>Asignaturas</a>
-            <a>Quienes Somos</a>
-            <a>Información</a>
-            <a>Admisiones</a>
-            <span><img class="icono__bandera" src="./assets/img/banderaEspaña.jpg" width="30" alt=""></span>
-            <span><img class="icono__bandera" src="./assets/img/banderaCataluña.png" width="30" alt=""></span>
-        </nav>
+      <h1>Academia Virtual BACH.EZ</h1>
+      <nav>
+        <a data-i18n-nav>Inicio</a>
+        <a data-i18n-nav>Asignaturas</a>
+        <a data-i18n-nav>Quienes Somos</a>
+        <a data-i18n-nav>Información</a>
+        <a data-i18n-nav>Admisiones</a>
+        <span
+          ><img
+            class="icono__bandera"
+            id="idioma__spanish"
+            src="./assets/img/banderaEspaña.jpg"
+            width="30"
+            alt=""
+        /></span>
+        <span
+          ><img
+            class="icono__bandera"
+            id="idioma__catalan"
+            src="./assets/img/banderaCataluña.png"
+            width="30"
+            alt=""
+        /></span>
+      </nav>
     </header>
     <main>
-        <div class="contacto">
-            <span>RESERVA TU CLASE: (+0) 123 456 789</span>
-        </div>
-        <section class="seccion__bienvenida">
-            <article class="informacion" >
-                <div class="logo">Logo</div>
-                <div class="seccion__informacion">
-                    <h3>Palmas de Mayorca</h3>
-                    <div class="links">
-                        <a href="">Solicitar Información</a>
-                        <a href="">Extranet Para Alumnos</a>
-                    </div>
-                </div>
-            </article>
-        </section>
-
+      <div class="contacto">
+        <span data-i18n="reserva">RESERVA TU CLASE: (+0) 123 456 789</span>
+      </div>
+      <section class="seccion__bienvenida">
+        <article class="informacion">
+          <div class="logo">Logo</div>
+          <div class="seccion__informacion">
+            <h3 data-i18n="lugar">Palmas de Mayorca</h3>
+            <div class="links">
+              <a href="" data-i18n="solicitar">Solicitar Información</a>
+              <a href="" data-i18n="extranet">Extranet Para Alumnos</a>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+    <script src="./assets/js/lib/i18next.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
